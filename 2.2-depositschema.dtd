@@ -1,0 +1,33 @@
+<!-- Defined a ROOT element that contains ONE OR MORE copies of elemenet "deposit" -->
+<!ELEMENT deposit-list (deposit+ )>
+<!-- Define the "deposit" which contains EXACT ONE amount -->
+<!ELEMENT deposit (amount) >
+<!-- Define element "amount" which has NO CHILD ELEMENTS but TEXT ! -->
+<!ELEMENT amount (#PCDATA) >
+
+<!-- 
+
+    Element Suffix:
+    No suffix   : Exact One Element
+    +           : Minimum One and maximum unlimited
+    ?           : Minimum Zero and maximum unlimited   
+-->
+<!ATTLIST deposit acc-no CDATA #REQUIRED
+                 date CDATA #IMPLIED >
+
+
+<!-- DTD ASSIGNMENT -1 -->
+<!--
+<! ELEMENT loan-list(loan+)>
+<! ELEMENT loan(applicant, co-applicant?)>
+<! ELEMENT applicant(firstname,lastname?)>
+<! ELEMENT co-applicant(firstname,lastname?)>
+
+<! ELEMENT firstname(#PCDATA)>
+<! ELEMENT lastname(#PCDATA)>
+<ATTLIST loan acc-no CDATA #REQUIRED>
+-->
+
+
+
+

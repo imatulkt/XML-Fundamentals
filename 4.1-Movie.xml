@@ -1,0 +1,10 @@
+<!DOCTYPE collection SYSTEM "4.2-movie.dtd">
+<collection>
+    <movie genre="scifi">
+        <actor name="XYZ", age="25", gender="M">
+
+        </actor>
+
+
+    </movie>
+</collection>

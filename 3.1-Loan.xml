@@ -1,0 +1,6 @@
+<!DOCTYPE deposit-list SYSTEM "3.2-loanlist.dtd">
+<loan-list>
+    <loan acc-no="5678">
+        <applicant firstname="Atul", lastname="Tiwari"></applicant>
+    </loan>
+</loan-list>

@@ -1,0 +1,11 @@
+
+<!ELEMENT loan-list (loan+)>
+<!ELEMENT loan (applicant, co-applicant?)>
+<!ELEMENT applicant (EMPTY)>
+<!ELEMENT co-applicant (EMPTY)>
+
+<!ATTLIST loan acc-no CDATA #REQUIRED>
+<!ATTLIST applicant firstname CDATA #REQUIRED
+                    lastname CDATA #IMPLIED>
+<!ATTLIST CO-applicant firstname CDATA #REQUIRED
+                    lastname CDATA #IMPLIED>

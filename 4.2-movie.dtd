@@ -1,0 +1,9 @@
+<!ELEMENT collection (movie+)>
+<!ELEMENT movie (actor+)>
+<!ELEMENT actor (EMPTY)>
+
+<!ATTLIST movie genre (scifi|action|drama) CDATA #REQUIRED>
+<!ATTLIST actor name CDATA #REQUIRED
+                age CDATA #REQUIRED
+                gender CDATA #REQUIRED
+>

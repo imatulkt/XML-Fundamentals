@@ -1,0 +1,23 @@
+<ms:product-list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ms="http://atuljtiwari.com" xsi:schemaLocation="http://atuljtiwari.com 8.ComplexType.xsd">
+<ms:product>
+	<ms:code>GH-1234</ms:code>
+	<ms:price>299</ms:price>
+	<ms:category>Alpha</ms:category>
+</ms:product>
+<ms:product>
+	<ms:code>GH-1234</ms:code>
+	<ms:price>299</ms:price>
+</ms:product>
+<ms:product>
+	<ms:code>GH-1234</ms:code>
+	<ms:price>299</ms:price>
+</ms:product>
+<ms:product>
+	<ms:code>GH-1234</ms:code>
+	<ms:price>299</ms:price>
+</ms:product>
+<ms:product>
+	<ms:code>GH-1234</ms:code>
+	<ms:price>299</ms:price>
+</ms:product>
+</ms:product-list>

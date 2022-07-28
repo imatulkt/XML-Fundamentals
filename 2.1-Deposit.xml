@@ -1,0 +1,8 @@
+<!-- Older method of REFERENCING DTD from XML -->
+<!DOCTYPE deposit-list SYSTEM "2.2-depositschema.dtd">
+<deposit-list>
+	<deposit acc-no="123">
+		<amount>12000</amount>	
+		<amount>10000</amount>	
+	</deposit>
+</deposit-list>

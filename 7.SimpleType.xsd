@@ -1,0 +1,17 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+	targetNamespace="http://www.atuljtiwari.com"
+	xmlns:t="http://www.atuljtiwari.com">
+
+	<xs:element name="price" type="t:typePrice">
+	</xs:element>
+	
+	<!-- All Userdefined "SimpleType" are "Inherited" from another
+		Existing SimpleTypes-->
+	<xs:simpleType name="typePrice">
+		<xs:restriction base="xs:float">		<!-- reference to BASE -->
+			<xs:minInclusive value="100.0"/>
+			<xs:maxInclusive value="999.9"/>
+		</xs:restriction>
+	</xs:simpleType>
+
+</xs:schema>

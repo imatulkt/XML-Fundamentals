@@ -1,0 +1,5 @@
+<ms:price xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:ms="http://www.atuljtiwari.com"	
+	xsi:schemaLocation="http://www.atuljtiwari.com 7.SimpleType.xsd">
+	100
+</ms:price>

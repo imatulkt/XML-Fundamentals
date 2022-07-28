@@ -1,0 +1,5 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    targetNamespace="http://www.atuljtiwari.com">
+	<xs:element name="price" type="xs:positiveInteger">
+	</xs:element>
+</xs:schema>

@@ -1,0 +1,68 @@
+<!-- 
+   XML is derived from "SGML", (HTML is also derived from SGML)
+
+TAG :       Anything between "<" and ">" Angular Brackets
+		    The first character in tag name and "<" must not have any space
+		    Valid : <h1>, <h1    >
+		    Invalid: < h1>
+		    Tagnames must not include space
+		    Valid: <firstname>, <first-name>
+		    Invalid: <first name> 
+
+Element:	Made of "Opening Tag", Contents & "Closing Tag"
+		    <h1>Hello World</h1>
+    
+XML is heirarchical data. It contains one and only one root.
+The root may contain any number of child elements.
+
+CONTENT
+1. Schema Using DTD
+2. Schema Using XSD
+				XSD : Introduced by Microsoft
+					  It has alot of better features
+					  1. Lots of Data Type (int,bool, string)
+					  2. Complex and user defined data type.
+					  3. One XML can use more than 1 schema.
+					  Namespace:	Document that defines elements and types.
+					  Every namespace uses "URI" (Expected: Globally Unique URI)
+				
+						What if?
+							namespace "http://mahendra.com/products" has ONE element "price"
+							The FullyQualified name for "price" element:
+								"http://mahendra.com/products":price
+							For "Using" any element or type from namespace, we instead use a "prefix"
+							xmlns:<PREFIX>=<URI>
+
+							xmlns:ms="http://mahendra.com/products"
+							Now, i can use "price" element as "ms:price"
+
+						Default Namespace?
+							Namespace imported without any prefix is "Default namespace.
+							xmlns="http://mahendra.com/products" then "price" element need to PREFIX!!
+
+
+3. XSLT : XML Stylesheet Template Engine	
+		  XSLT = XML + XSL (Style Definition) + XSLT Engine (ex. Web Browser)
+		  XSLT Engine is available with Programming language like Java, Python in form of PDF, HTML etc
+		   and also with Web Browser in form of HTML
+
+		-->
+
+<accounts ifsc="HDFC000166">
+	<!-- Start of ROOT element -->
+	<account id="A63637" type="Corporate Salary">
+		<!-- Element with "Attributes" -->
+		<customer>
+			<first-name>Atul Kumar</first-name> <!-- Elements that contain TEXT -->
+			<last-name>Tiwari</last-name>
+		</customer>
+		<closing-balance>55000</closing-balance>
+	</account>
+	<account id="A63638" type="SB">
+		<customer>
+			<first-name>Pooja</first-name>
+			<last-name>Tiwari</last-name>
+		</customer>
+		<closing-balance>54000</closing-balance>
+	</account>
+</accounts>					
